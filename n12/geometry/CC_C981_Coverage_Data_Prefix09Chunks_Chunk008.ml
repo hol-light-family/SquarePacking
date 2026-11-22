@@ -1,0 +1,112 @@
+(* ========================================================================= *)
+(* Port of Completion/Cases/C981/Coverage/Data/Prefix09Chunks/Chunk008.lean    *)
+(* (S12Completion.C981.Coverage.prefix09Chunk008): a literal table of C981 coverage *)
+(* fronts (100 rows).  Entries are the FinsetPool constants c981fp_fsNN.   *)
+(* ========================================================================= *)
+
+needs "n12/geometry/p2_base.ml";;
+needs "n12/geometry/FinsetPool.ml";;
+
+(* Lean: prefix09Chunk008 *)
+let c981cov_prefix09chunk008 = new_definition
+ `c981cov_prefix09chunk008 : ((num->bool)list)list = [
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs46; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs46; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs46; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs46; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs45; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs45; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs45; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs45; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs47; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs47; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs47; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs34; c981fp_fs47; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs22; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs22; c981fp_fs00; c981fp_fs43; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs26; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs26; c981fp_fs00; c981fp_fs43; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs48; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs23; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs23; c981fp_fs00; c981fp_fs43; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs28; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs31; c981fp_fs28; c981fp_fs00; c981fp_fs43; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs22; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs22; c981fp_fs00; c981fp_fs43; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs26; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs26; c981fp_fs00; c981fp_fs43; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs48; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs23; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs23; c981fp_fs00; c981fp_fs43; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs28; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs37; c981fp_fs28; c981fp_fs00; c981fp_fs43; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs22; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs22; c981fp_fs31; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs26; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs26; c981fp_fs31; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs23; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs23; c981fp_fs31; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs28; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs43; c981fp_fs28; c981fp_fs31; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs22; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs22; c981fp_fs31; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs26; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs26; c981fp_fs31; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs23; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs23; c981fp_fs31; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs28; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs46; c981fp_fs28; c981fp_fs31; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs33; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs33; c981fp_fs22; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs33; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs33; c981fp_fs26; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs33; c981fp_fs48; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs33; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs33; c981fp_fs23; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs33; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs33; c981fp_fs28; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs45; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs45; c981fp_fs22; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs45; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs45; c981fp_fs26; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs45; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs45; c981fp_fs23; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs45; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs45; c981fp_fs28; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs40; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs40; c981fp_fs22; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs40; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs40; c981fp_fs26; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs40; c981fp_fs48; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs40; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs40; c981fp_fs23; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs40; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs40; c981fp_fs28; c981fp_fs00; c981fp_fs41; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs47; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs47; c981fp_fs22; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs47; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs47; c981fp_fs26; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs47; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs47; c981fp_fs23; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs47; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs47; c981fp_fs28; c981fp_fs29; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs49; c981fp_fs22; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs49; c981fp_fs26; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs49; c981fp_fs23; c981fp_fs00; c981fp_fs00; c981fp_fs00];
+   [c981fp_fs06; c981fp_fs03; c981fp_fs05; c981fp_fs11; c981fp_fs49; c981fp_fs28; c981fp_fs00; c981fp_fs00; c981fp_fs00]]`;;

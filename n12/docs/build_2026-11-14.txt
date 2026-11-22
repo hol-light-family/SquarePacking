@@ -1,0 +1,113 @@
+Excerpts of the logs of two single-process builds of n12.
+
+1. Build of the repository as it is now (n12/make.ml, HOL Light commit b5d59ef):
+   2026-11-14 04:09 to 19:58 UTC, 15 h 50 min wall clock, 20.5 GB peak memory
+   (/usr/bin/time).  FINAL times are OCaml Sys.time CPU seconds.
+
+parallel steps use at most 96 domains (SQ_DOMAINS)
+FINAL Phase-1 chain: 2501s
+FINAL Phase-1 reduction (S12_REDUCED_117): 13594s
+FINAL p2 geometry (1521 files): 24588s
+FINAL p3: 24639s
+FINAL cert stages: 31544s
+FINAL overlaps: 55973s
+FINAL initial covers: 80872s
+FINAL PV providers: 80872s
+C701: |- EXCLUDED_ROW 382 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C713: |- EXCLUDED_ROW 394 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C717: |- EXCLUDED_ROW 398 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C973: |- EXCLUDED_ROW 504 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C978: |- EXCLUDED_ROW 509 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C979: |- EXCLUDED_ROW 510 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C898: |- EXCLUDED_ROW 485 with 0 hypotheses (0 block overlaps, 0 initial covers)
+FINAL cert cases: 80892s
+FINAL variant.ml: 83489s
+FINAL foursquare.ml: 86852s
+FINAL highright.ml: 91721s
+FINAL cs2_all.ml: 104033s
+FINAL c868.ml: 104033s
+assemble_s12: 117 of 117 retained rows proved, 0 assumed
+FINAL assembled: 104046s
+FINAL hypotheses remaining: 0
+FINAL RESULT CHECK passed: |- square_packing_side 12 = &4 with no hypotheses
+FINAL check_axioms passed: only INFINITY_AX, SELECT_AX, ETA_AX
+n=12 STATEMENT CHECKED: |- square_packing_side 12 = &4 (no hypotheses; axioms: INFINITY_AX, SELECT_AX, ETA_AX only)
+val it : thm = |- square_packing_side 12 = &4
+val it : thm = |- forall t. packs 12 t <=> &4 <= t
+val it : thm list =
+  [|- exists f. ONE_ONE f /\ ~ONTO f; |- forall P x. P x ==> P ((@) P);
+   |- forall t. (\x. t x) = t]
+
+2. The earlier definitive build (make_s12_final1.ml, the predecessor of n12/make.ml, before
+   the directory reorganization; HOL Light commit e5236a5): 2026-11-13 09:45 to 2026-11-14
+   02:19 UTC, about 16.5 h wall clock.
+
+FINAL Phase-1 chain: 2644s
+FINAL Phase-1 reduction (S12_REDUCED_117): 14493s
+FINAL p2 geometry (1521 files): 25897s
+FINAL p3: 25950s
+FINAL cert stages: 33060s
+FINAL overlaps: 58579s
+FINAL initial covers: 84384s
+FINAL PV providers: 84384s
+C701: |- EXCLUDED_ROW 382 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C713: |- EXCLUDED_ROW 394 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C717: |- EXCLUDED_ROW 398 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C973: |- EXCLUDED_ROW 504 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C978: |- EXCLUDED_ROW 509 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C979: |- EXCLUDED_ROW 510 with 0 hypotheses (0 block overlaps, 0 initial covers)
+C898: |- EXCLUDED_ROW 485 with 0 hypotheses (0 block overlaps, 0 initial covers)
+FINAL cert cases: 84403s
+FINAL variant.ml: 87096s
+FINAL foursquare.ml: 90574s
+FINAL highright.ml: 95598s
+FINAL cs2_all.ml: 108516s
+FINAL c868.ml: 108516s
+FINAL add VARIANT_CASE_THMS: 11
+FINAL add FS_CASE_THMS: 15
+FINAL add HR_CASE_THMS: 15
+FINAL add CS2_CASE_THMS: 36
+FINAL add C868_CASE_THMS: 1
+FINAL add CA_EXCLUDED: 7
+FINAL add C997C_EXCLUDED_ROW: 1
+FINAL add CCC982C_EXCLUDED_ROW: 1
+FINAL add CCC888_EXCLUDED_ROW888: 1
+FINAL add CCC888_EXCLUDED_ROW889: 1
+FINAL add CCC702_EXCLUDES: 1
+FINAL add CCC893C_EXCLUDED_ROW: 1
+FINAL add CC1084_EXCLUDED_ROW: 1
+FINAL add CC1072_EXCLUDED_ROW: 1
+FINAL add CCC48R_EXCLUDED_ROW48: 1
+FINAL add CCC48R_EXCLUDED_ROW573: 1
+FINAL add CCC48R_EXCLUDED_ROW574: 1
+FINAL add C896CE_EXCLUDED_ROW: 1
+FINAL add C715WC_EXCLUDED_ROW: 1
+FINAL add FC580C_EXCLUDED_ROW580: 1
+FINAL add FC580C_EXCLUDED_ROW581: 1
+FINAL add C868C_EXCLUDED_ROW: 1
+FINAL add MPCO_EXCLUDED_ROW683: 1
+FINAL add MPCO_EXCLUDED_ROW867: 1
+FINAL add C1090OEN_EXCLUDED_ROW: 1
+FINAL add C705716WC_EXCLUDED_ROW705: 1
+FINAL add C705716WC_EXCLUDED_ROW716: 1
+FINAL add C976CO_EXCLUDED_ROW: 1
+FINAL add C977CCL_EXCLUDED_ROW: 1
+FINAL add C696OWC_EXCLUDED_ROW: 1
+FINAL add MPC700_EXCLUDED_ROW: 1
+FINAL add C974AE_EXCLUDED_ROW: 1
+FINAL add C975EN_EXCLUDED_ROW: 1
+FINAL add C983F4CO_EXCLUDED_ROW: 1
+FINAL add C1089OE_EXCLUDED_ROW: 1
+FINAL add FC972C_EXCLUDED_ROW: 1
+FINAL add C1092CC_EXCLUDED_ROW: 1
+FINAL add C981CMP_EXCLUDED_ROW: 1
+FINAL add C1091CO_EXCLUDED_ROW: 1
+assemble_s12: 117 of 117 retained rows proved, 0 assumed
+FINAL assembled: 108529s
+FINAL hypotheses remaining: 0
+FINAL check_axioms passed: only INFINITY_AX, SELECT_AX, ETA_AX
+
+val it : thm = |- square_packing_side 12 = &4
+val it : thm list =
+  [|- exists f. ONE_ONE f /\ ~ONTO f; |- forall P x. P x ==> P ((@) P);
+   |- forall t. (\x. t x) = t]
